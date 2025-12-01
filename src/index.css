@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles - Light Mode (default) */
+body {
+  @apply bg-lightBg-light text-lightText transition-colors duration-300;
+}
+
+/* Dark Mode Styles */
+.dark body {
+  @apply bg-darkBrown text-white;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  @apply transition-colors duration-300;
+}
